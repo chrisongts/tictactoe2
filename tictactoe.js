@@ -67,11 +67,11 @@ function checkForWinner(){
          dig1 == 3 || dig2 == 3 ) {
            setTimeout(function() {alert("Player X won !!!");
            gameWon = true;
-           if (gameWon) {
+          //  if (gameWon) {
              location.reload(true);
-           }
+          //  }
           }, 150);
-       }
+       return}
      }
 
     if ( currentPlayer == playerO ) {
@@ -80,11 +80,11 @@ function checkForWinner(){
             dig1 == 0 || dig2 == 0 ) {
               setTimeout(function() {alert("Player O won !!!");
               gameWon = true;
-              if (gameWon) {
+              // if (gameWon) {
                 location.reload(true);
-              }
+              // }
               }, 150);
-    }
+    return}
   }
 
     if ( counter >= 8 && !gameWon ) {

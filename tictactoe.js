@@ -71,7 +71,7 @@ function checkForWinner(){
              location.reload(true);
            }
           }, 150);
-       }
+       return}
      }
 
     if ( currentPlayer == playerO ) {
@@ -84,7 +84,7 @@ function checkForWinner(){
                 location.reload(true);
               }
               }, 150);
-    }
+    return}
   }
 
     if ( counter >= 8 && !gameWon ) {
